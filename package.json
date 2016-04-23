@@ -1,0 +1,18 @@
+{
+  "name": "depman",
+  "version": "0.1.0",
+  "description": "depman helps your with your DI, making it easy and clean",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dependency",
+    "injection"
+  ],
+  "author": "Arthur Féral <arthur.feral@hotmail.fr>",
+  "license": "ISC",
+  "dependencies": {
+
+  }
+}
