@@ -4,8 +4,8 @@
   "description": "depman helps your with your DI, build clean web apps easely",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register -r test/bootstrap.test.js 'test/**/*.test.js'",
-    "test-watch": "mocha --compilers js:babel-register -w -G -r test/bootstrap.test.js 'test/**/*.test.js'"
+    "test": "mocha --compilers js:babel-register -r test/testsHelper.js 'test/**/*.test.js'",
+    "test-watch": "mocha --compilers js:babel-register -w -G -r test/testsHelper.js 'test/**/*.test.js'"
   },
   "repository": {
     "type": "git",
