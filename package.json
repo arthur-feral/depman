@@ -4,6 +4,8 @@
   "description": "depman helps your with your DI, build clean web apps easely",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "watch": "gulp default",
     "test": "mocha --compilers js:babel-register -r test/testsHelper.js 'test/**/*.test.js'",
     "test-watch": "mocha --compilers js:babel-register -w -G -r test/testsHelper.js 'test/**/*.test.js'"
   },
@@ -22,15 +24,36 @@
     "url": "https://github.com/arthur-feral/reactplease/issues"
   },
   "dependencies": {
-
   },
   "devDependencies": {
+    "camelize": "^1.0.0",
+    "classnames": "2.1.4",
+    "eventemitter2": "^0.4.14",
+    "express": "4.13.4",
+    "if-exp": "^2.0.0",
+    "jade": "1.11.0",
+    "jquery": "2.2.0",
+    "keymirror": "0.1.1",
+    "lodash": "4.6.1",
+    "react": "0.14.7",
+    "react-dom": "0.14.7",
     "babel-preset-es2015": "6.5.0",
     "babel-register": "6.5.2",
     "chai": "^3.5.0",
     "mocha": "^2.4.0",
     "sinon": "1.17.3",
-    "sinon-chai": "2.8.0"
+    "sinon-chai": "2.8.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "gulp": "3.9.0",
+    "gulp-duration": "0.0.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-plumber": "1.0.1",
+    "gulp-util": "^3.0.6",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "1.1.0",
+    "watchify": "3.7.0"
   },
   "browserify": {
     "transform": [
