@@ -1,10 +1,15 @@
 {
   "name": "depman",
   "version": "0.1.0",
-  "description": "depman helps your with your DI, making it easy and clean",
+  "description": "depman helps your with your DI, build clean web apps easely",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-register -r test/bootstrap.test.js 'test/**/*.test.js'",
+    "test-watch": "mocha --compilers js:babel-register -w -G -r test/bootstrap.test.js 'test/**/*.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arthur-feral/depman.git"
   },
   "keywords": [
     "dependency",
@@ -12,7 +17,19 @@
   ],
   "author": "Arthur Féral <arthur.feral@hotmail.fr>",
   "license": "ISC",
+  "homepage": "https://github.com/arthur-feral/reactplease#readme",
+  "bugs": {
+    "url": "https://github.com/arthur-feral/reactplease/issues"
+  },
   "dependencies": {
-
+    "lodash": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.5.0",
+    "babel-register": "6.5.2",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.0",
+    "sinon": "1.17.3",
+    "sinon-chai": "2.8.0"
   }
 }
