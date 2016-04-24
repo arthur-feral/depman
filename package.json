@@ -22,7 +22,7 @@
     "url": "https://github.com/arthur-feral/reactplease/issues"
   },
   "dependencies": {
-    "lodash": "^4.0.0"
+
   },
   "devDependencies": {
     "babel-preset-es2015": "6.5.0",
@@ -31,5 +31,17 @@
     "mocha": "^2.4.0",
     "sinon": "1.17.3",
     "sinon-chai": "2.8.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
   }
 }
